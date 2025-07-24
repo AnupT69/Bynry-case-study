@@ -69,6 +69,8 @@ v PostgreSQL DRIVER
 ###################################################################
 If you are running out of time you can directly review this two code file :-
  1. Bussiness logic 
+    https://github.com/AnupT69/Bynry-case-study/blob/main/part%201/Bynry-api/src/main/java/com/Updated_Api_Bynry/Bynry_api/Service/ProductService.java
 
  2. Controller layer 
+    https://github.com/AnupT69/Bynry-case-study/blob/main/part%201/Bynry-api/src/main/java/com/Updated_Api_Bynry/Bynry_api/Controller/ProductController.java
 
