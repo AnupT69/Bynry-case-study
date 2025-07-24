@@ -59,3 +59,16 @@ iv run the application
 v test the api running on port :8080
 
 #############################################################
+In above spring boot project i use 
+i spring boot starter 
+ii Spring web 
+iii Lombok 
+iv Spring JPA 
+v PostgreSQL DRIVER 
+
+###################################################################
+If you are running out of time you can directly review this two code file :-
+ 1. Bussiness logic 
+
+ 2. Controller layer 
+
