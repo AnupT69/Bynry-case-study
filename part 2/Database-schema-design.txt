@@ -1,0 +1,38 @@
+##########################################################################################################
+Justification for each Relations in Database-schema
+Warehouses → Products (via Inventory)
+
+
+##
+1. Companies --> Warehouses
+    i The Relation between company and warehouse is One to many (1:n)
+      because a company can have multiple warehouses in different locations , but a warehouse belongs to only one company
+
+##
+2. Warehouses --> Products (via Inventory)
+    i The Relation between Warehouses and Products is Many to Many (M:M) and for that we have to create 
+      another Relation named Inventory , that acts as bridge be. 
+      Primary key from both the Relation that is Warehouses and Products is used as Foreign Key in Inventory Relation
+
+##
+3. Products --> Inventory
+   i The Relation between Products and Inventory is one to many (1:N) because for each product there can be multiple inventory records across different warehouses
+
+## 
+4. Inventory --> Inventory Logs 
+   i The Relation between Inventory and Inventory logs is one to many (1:M)
+     because each inventory record can have multiple logs tracking quantity changes over time.
+   
+##
+5. Suppliers --> Products
+   i Relation Between Suppliers and Products is Many to many (M:M) because
+     One supplier can supply multiple products and one product can be supply by many Suppliers.
+     For this i created another Relation named Supplier_Products that acts as bridge between Suppliers and Products.
+
+##
+6. Products → Product Bundles
+   Relation Type: Self-Referencing Many-to-Many (M : N)
+   i The Relation between Products and product bundles is many to many (Self- Referencing)
+   because Some products are bundle made up of other products.
+   AND one bundle product can contain multiple products.
+   I implement this as Product Bundles Relation maps bundle_id(main product pk) to component_id (sub-product)

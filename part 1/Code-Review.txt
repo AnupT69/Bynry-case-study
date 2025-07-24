@@ -1,0 +1,47 @@
+#################################################################################################################################
+
+1. Issue and Impact:
+    i Input Validation use :-
+        The api created by previous intern try to directly access the data feild without any prior checking if the data feild 
+        is present or not.
+    ii There is no type Validation:-
+        It may cause database error , as there is no type validation.
+    iii Null data:-
+        The intern does not check whether the data is null or not before accessing the data feilds.
+    iv Two separate commits:-
+        The intern does the two separate commits in the api.
+        Imapct:- 1. If the first commit success , and the second commit failed then you will have a product created but no inventory.
+                 2. There is no rollback on error , causes inconsistent data.
+    v No exception handling:-
+        The intern does not handle the main bussiness logic and it may crash the api.
+    vi No timestamp added in this api.
+    
+2. Bussiness Logic issue 
+    1. No duplicate check
+        :- The intern does'nt check any duplicate id like skus , wareshouse_id.
+        :- whether skus or wareshouse_id is present or not.
+3. Response and Api design issue:-
+    1. No proper http status code return 
+######################################################################################################################################
+
+  My Approch for same api endpoint 
+  (In spring boot)
+
+Request Body:- 
+   {
+  "name": "iPhone 15",
+  "sku": 3,
+  "price": 999.99,
+  "warehouseId": 1,
+  "initialQuantity": 50
+}
+
+
+Response from my Api:- 
+{
+"message": "Product Created Successfully",
+"productId": 2,
+"status": "Success",
+"timestamp": "2025-07-24T10:42:44.3583939"
+}
+

@@ -1,0 +1,37 @@
+########################################
+Based on the previous ERD , i have these entities :- 
+1. Company (id , name)
+2. Warehouse (id , name , Company_id)
+3. Product (id , name , sku , threshold , supplier_id,product_type)
+4. inventory(id,product_id,warehouse_id,quantity,last_sale_date)
+5. Suppplier (id , name , contact_email)
+6. Sales(id,product_id,quantity_sold,sale_date):- for sales activity
+
+
+###########################################
+Now for this API , i used Spring boot
+
+Dependency :-
+1. Spring boot starter 
+2. Spring web :-  For creating Enterprises level REST APIS
+3. Devtools:- For automatic restart server 
+4. LOMBOK:- for important annotation used to reduce boilerplate code 
+5. Spring Data JPA:- JPA stands for Java persistent API , this is an ORM framework know as Hibernate , which make easier for communication with database 
+6. The database i used is POSTGRESQL and for this i add POSTGRESQL driver 
+
+
+#######################################
+#Folder structure :
+Maven project :- 
+src/main/Java
+            1. Models:- All the entities class 
+            2. Repository :- Hibernate configuration
+            3.DTO :- For request and response object
+            4. Service :- For bussiness logic 
+            5. Contollers :- All the apis will be present here 
+
+##################################
+In this demo , i will write code file for 
+1. Repository layer 
+2. Service Layer 
+3. Controller layer 
