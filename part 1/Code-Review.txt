@@ -1,3 +1,8 @@
+Anup Tiwari 
+anooptiwari4766@gmail.com 
+
+
+
 #################################################################################################################################
 
 1. Issue and Impact:
@@ -45,3 +50,12 @@ Response from my Api:-
 "timestamp": "2025-07-24T10:42:44.3583939"
 }
 
+##########################################################
+I also add API project spring boot base , 
+ i Import this project in Eclipse/IntelliJ 
+ ii download maven projects 
+ iii add application.properties and configure POSTGRESQL DATABASE 
+iv run the application 
+v test the api running on port :8080
+
+#############################################################
